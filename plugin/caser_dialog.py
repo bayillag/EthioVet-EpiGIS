@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'caser_dialog_base.ui'
 #
-# Created by: PyQt5 UI code generator
+# Created by: PyQt6 UI code generator
 # Rebranded for: EthioVet-EpiGIS (Ethiopian MoA / Jinka Lab Standards)
 #
 # WARNING! All changes made in this file will be lost!

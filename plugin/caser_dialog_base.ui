@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>436</width>
-    <height>341</height>
+    <width>450</width>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>EthioVet-EpiGIS | Jinka Lab Outbreak Manager</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_14">
    <item row="0" column="0" colspan="2">
@@ -27,7 +27,7 @@
      </property>
      <widget class="QWidget" name="tab_location">
       <attribute name="title">
-       <string>Location</string>
+       <string>1. Site &amp; geography</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_11">
        <item row="0" column="0">
@@ -39,7 +39,7 @@
           </font>
          </property>
          <property name="text">
-          <string>ID:</string>
+          <string>ADNIS ID:</string>
          </property>
         </widget>
        </item>
@@ -47,12 +47,12 @@
         <widget class="QLineEdit" name="lineEdit_3_id">
          <property name="minimumSize">
           <size>
-           <width>311</width>
+           <width(311)</width>
            <height>0</height>
           </size>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         <property name="placeholderText">
+          <string>Format: DDD/YYYY/RRZZWW/NNN</string>
          </property>
         </widget>
        </item>
@@ -65,7 +65,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Code:</string>
+          <string>MoA Code:</string>
          </property>
         </widget>
        </item>
@@ -76,9 +76,6 @@
            <width>311</width>
            <height>0</height>
           </size>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
@@ -91,16 +88,16 @@
           </font>
          </property>
          <property name="text">
-          <string>Large scale:</string>
+          <string>Diag. Type:</string>
          </property>
         </widget>
        </item>
        <item row="2" column="2">
         <widget class="QComboBox" name="comboBox_4_large_scale">
-         <property name="maximumSize">
+         <property name="minimumSize">
           <size>
-           <width>78</width>
-           <height>16777215</height>
+           <width>150</width>
+           <height>0</height>
           </size>
          </property>
         </widget>
@@ -110,12 +107,6 @@
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>189</width>
-           <height>20</height>
-          </size>
-         </property>
         </spacer>
        </item>
        <item row="3" column="0" colspan="4">
@@ -123,7 +114,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="label">
            <property name="text">
-            <string>Longitude:</string>
+            <string>Longitude (E):</string>
            </property>
           </widget>
          </item>
@@ -138,19 +129,19 @@
           <widget class="QToolButton" name="toolButton_3_dms">
            <property name="minimumSize">
             <size>
-             <width>0</width>
-             <height>59</height>
+             <width>40</width>
+             <height>40</height>
             </size>
            </property>
            <property name="text">
-            <string>dms</string>
+            <string>DMS</string>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
           <widget class="QLabel" name="label_2_latitude">
            <property name="text">
-            <string>Latitude:</string>
+            <string>Latitude (N):</string>
            </property>
           </widget>
          </item>
@@ -163,25 +154,12 @@
          </item>
         </layout>
        </item>
-       <item row="4" column="3">
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>11</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
        <item row="5" column="0" colspan="4">
         <layout class="QGridLayout" name="gridLayout_6_reference">
          <item row="0" column="0">
           <widget class="QLabel" name="label_4_reference">
            <property name="text">
-            <string>Reference layer:</string>
+            <string>Woreda Boundary:</string>
            </property>
           </widget>
          </item>
@@ -197,32 +175,11 @@
          </item>
         </layout>
        </item>
-       <item row="6" column="0" colspan="4">
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_10_outbreak_layer">
-           <property name="text">
-            <string>Outbreak layer:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QComboBox" name="comboBox_5_outbreak_layer">
-           <property name="minimumSize">
-            <size>
-             <width>241</width>
-             <height>0</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
       </layout>
      </widget>
      <widget class="QWidget" name="tab_2_disease">
       <attribute name="title">
-       <string>Disease</string>
+       <string>2. Etiology &amp; Counts</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_12">
        <item row="0" column="0" colspan="2">
@@ -236,7 +193,7 @@
             </font>
            </property>
            <property name="text">
-            <string>Disease:</string>
+            <string>Suspected Disease:</string>
            </property>
           </widget>
          </item>
@@ -257,7 +214,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="label_11_num_animals">
            <property name="text">
-            <string>Number of animals:</string>
+            <string>Population at Risk (PAR):</string>
            </property>
           </widget>
          </item>
@@ -272,116 +229,42 @@
        </item>
        <item row="2" column="0">
         <widget class="QTableWidget" name="tableWidget_species">
-         <property name="font">
-          <font>
-           <weight>50</weight>
-           <bold>false</bold>
-          </font>
-         </property>
-         <property name="editTriggers">
-          <set>QAbstractItemView::NoEditTriggers</set>
-         </property>
-         <property name="selectionMode">
-          <enum>QAbstractItemView::SingleSelection</enum>
-         </property>
-         <property name="selectionBehavior">
-          <enum>QAbstractItemView::SelectRows</enum>
-         </property>
-         <property name="sortingEnabled">
-          <bool>true</bool>
-         </property>
-         <property name="wordWrap">
-          <bool>true</bool>
-         </property>
          <attribute name="horizontalHeaderStretchLastSection">
           <bool>true</bool>
          </attribute>
          <attribute name="verticalHeaderVisible">
           <bool>false</bool>
          </attribute>
-         <attribute name="verticalHeaderStretchLastSection">
-          <bool>false</bool>
-         </attribute>
          <column>
           <property name="text">
-           <string>Species</string>
-          </property>
-          <property name="font">
-           <font>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
+           <string>Species (MoA Code)</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>Type of production</string>
-          </property>
-          <property name="font">
-           <font>
-            <weight>75</weight>
-            <bold>true</bold>
-           </font>
+           <string>Production System</string>
           </property>
          </column>
         </widget>
        </item>
        <item row="2" column="1">
-        <layout class="QGridLayout" name="gridLayout_10_species_add_remove">
-         <item row="0" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout_species_btns">
+         <item>
           <widget class="QToolButton" name="toolButton_species_add">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
            <property name="text">
             <string>+</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="0">
-          <spacer name="verticalSpacer">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="2" column="0">
+         <item>
           <widget class="QToolButton" name="toolButton_5_species_dots">
            <property name="text">
             <string>...</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="0">
-          <spacer name="verticalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Vertical</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>20</width>
-             <height>40</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="4" column="0">
+         <item>
           <widget class="QToolButton" name="toolButton_2_species_remove">
-           <property name="minimumSize">
-            <size>
-             <width>25</width>
-             <height>25</height>
-            </size>
-           </property>
            <property name="text">
             <string>-</string>
            </property>
@@ -393,128 +276,43 @@
      </widget>
      <widget class="QWidget" name="tab_3_status">
       <attribute name="title">
-       <string>Status</string>
+       <string>3. Temporal Data</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_9">
        <item row="0" column="0">
-        <layout class="QGridLayout" name="gridLayout_7_year">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_8_year">
-           <property name="minimumSize">
-            <size>
-             <width>46</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Year:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="lineEdit_4_year">
-           <property name="maximumSize">
-            <size>
-             <width>81</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="inputMask">
-            <string/>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="maxLength">
-            <number>4</number>
-           </property>
-           <property name="frame">
-            <bool>true</bool>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <spacer name="horizontalSpacer_2">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>118</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
+        <widget class="QLabel" name="label_8_year">
+         <property name="text">
+          <string>Reporting Year:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="lineEdit_4_year">
+         <property name="maxLength">
+          <number>4</number>
+         </property>
+        </widget>
        </item>
        <item row="1" column="0">
-        <layout class="QGridLayout" name="gridLayout_8_status">
-         <item row="0" column="0">
-          <widget class="QLabel" name="label_7_status">
-           <property name="font">
-            <font>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Status:</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QComboBox" name="comboBox_3_status">
-           <property name="minimumSize">
-            <size>
-             <width>181</width>
-             <height>0</height>
-            </size>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
+        <widget class="QLabel" name="label_7_status">
+         <property name="text">
+          <string>Outbreak Status:</string>
+         </property>
+        </widget>
        </item>
-       <item row="2" column="0">
+       <item row="1" column="1">
+        <widget class="QComboBox" name="comboBox_3_status"/>
+       </item>
+       <item row="2" column="0" colspan="3">
         <widget class="QGroupBox" name="groupBox_dates">
-         <property name="font">
-          <font>
-           <italic>false</italic>
-          </font>
-         </property>
          <property name="title">
-          <string>Dates</string>
+          <string>Epidemiological Timeline</string>
          </property>
-         <layout class="QGridLayout" name="gridLayout">
+         <layout class="QGridLayout" name="gridLayout_dates">
           <item row="0" column="0">
            <widget class="QCheckBox" name="checkBox_dates_suspect">
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
             <property name="text">
-             <string>Suspect:</string>
+             <string>First Case Noted:</string>
             </property>
            </widget>
           </item>
@@ -527,33 +325,13 @@
           </item>
           <item row="1" column="0">
            <widget class="QCheckBox" name="checkBox_2_dates_confirmation">
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
             <property name="text">
-             <string>Confirmation:</string>
+             <string>Lab Confirmation:</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
            <widget class="QDateEdit" name="dateEdit_2_dates_confirmation">
-            <property name="calendarPopup">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="0">
-           <widget class="QCheckBox" name="checkBox_3_dates_expiration">
-            <property name="layoutDirection">
-             <enum>Qt::LeftToRight</enum>
-            </property>
-            <property name="text">
-             <string>Expiration:</string>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="1">
-           <widget class="QDateEdit" name="dateEdit_3_dates_expiration">
             <property name="calendarPopup">
              <bool>true</bool>
             </property>
@@ -566,7 +344,7 @@
      </widget>
      <widget class="QWidget" name="tab_4_notes">
       <attribute name="title">
-       <string>Notes</string>
+       <string>4. Clinical Notes</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_13">
        <item row="0" column="0">
@@ -585,9 +363,6 @@
    </item>
    <item row="1" column="1">
     <widget class="QDialogButtonBox" name="buttonBox">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
      <property name="standardButtons">
       <set>QDialogButtonBox::Cancel|QDialogButtonBox::Save</set>
      </property>
@@ -602,32 +377,12 @@
    <signal>accepted()</signal>
    <receiver>Dialog</receiver>
    <slot>accept()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>248</x>
-     <y>254</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>157</x>
-     <y>274</y>
-    </hint>
-   </hints>
   </connection>
   <connection>
    <sender>buttonBox</sender>
    <signal>rejected()</signal>
    <receiver>Dialog</receiver>
    <slot>reject()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>316</x>
-     <y>260</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>286</x>
-     <y>274</y>
-    </hint>
-   </hints>
   </connection>
  </connections>
 </ui>
